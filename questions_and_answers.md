@@ -2,12 +2,15 @@
 MCQ TEST
 1. Write the correct answer from the following options and give an explanation (2-5 lines).
 let greeting;
-greetign = {};
-console.log(greetign);
+greeting = {};
+console.log(greeting);
 A: {}
-B: ReferenceError: greetign is not defined
+B: ReferenceError: greeting is not defined
 C: undefined
-Answer:
+Answer: A.{}
+let greeting is a variable.
+greeting = {};this line set an empty object.
+so that console.log(greeting) displayed {}
 
 
 
@@ -21,7 +24,8 @@ A: NaN
 B: TypeError
 C: "12"
 D: 3
-Answer:
+Answer:B.TypeError
+when call the function we pass a number(1) and a string("2") that's why it gives TypeError.JavaScript cannot convert the string to a number automatically in this context, hence the error.
 
 
 
@@ -36,10 +40,10 @@ A: ['🍕', '🍫', '🥑', '🍔']
 B: ['🍝', '🍫', '🥑', '🍔']
 C: ['🍝', '🍕', '🍫', '🥑', '🍔']
 D: ReferenceError
-Answer:
-
-
-
+Answer:A.['🍕', '🍫', '🥑', '🍔']
+ info.favoriteFood property to the first element of the food array, which is "🥑".the next line overwrite it with the string "☕". This change doesn't affect the food array itself, as it's a separate data structure.
+So, when you log the food array, it will still contain the original values:
+["🥑", "🍕", "🍷", "🍻"]
 
 4. Write the correct answer from the following options and give an explanation (2-5 lines).
 function sayHi(name) {
@@ -51,8 +55,9 @@ A: Hi there,
 B: Hi there, undefined
 C: Hi there, null
 D: ReferenceError
-Answer:
-
+Answer:B. Hi there, undefined
+This function expects a "name" argument.But
+when we call the function without "name" parameter it will result in a "name is not defined" in JavaScript .
 
 
 
@@ -69,4 +74,9 @@ A: 1
 B: 2
 C: 3
 D: 4
-Answer:
+Answer:C. 3
+The nums array contains the values [0, 1, 2, 3].
+The code uses the forEach method to iterate through each element of the nums array.
+Inside the forEach loop, there's an if statement that checks if the current element (num) is truthy.
+In JavaScript, values like 1, 2, and 3 are considered truthy because they are non-zero numbers.
+When the if condition is met (i.e., when num is truthy), the count variable is incremented by 1. 
