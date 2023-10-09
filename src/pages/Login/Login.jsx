@@ -1,8 +1,29 @@
 import { Link } from "react-router-dom";
 import SocialLogin from "../Social/SocialLogin";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const Login = () => {
+const {signIn} =useContext(AuthContext)
+const handleLogin = (e) => {
+    e.preventDefault()
+    const form = new FormData(e.currentTarget);
+    const email = form.get('email');
+    const password = form.get('password');
+    
+    // validation
+    if (password < 6){
+        toast.error('Password must be at least 6 charecters');
+        return
+    }
+    // creating a new user
+        signIn(email,password)
+        .then(res =>console.log(res.user))
+        .catch(err => console.log(err))
+    }
+
     return (
         <div>
             <h1>Please Login</h1>
@@ -13,7 +34,7 @@ const Login = () => {
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>

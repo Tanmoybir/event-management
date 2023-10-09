@@ -6,7 +6,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const SocialLogin = () => {
-    const {user,googleLogin} =useContext(AuthContext)
+    const {googleLogin} =useContext(AuthContext)
     const handleSocialLogin =(media) => {
            media()
            .then (res =>console.log(res))
