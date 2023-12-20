@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
+      "detailImg":"https://i.ibb.co/GF2vvXV/CONFERENES-2.webp",
+      "title": "CONFERENCE",
+      "price": 100000,
+      "detail": "A conference is a formal gathering of people with shared interests, typically featuring multiple speakers or presenters who discuss and share information on specific topics or industries. It often includes workshops, panel discussions, and networking opportunities."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/HXss9jY/Art-Axhibition.jpg",
+      "detailImg":"https://i.ibb.co/YyD14wn/EXHIBITIONS-3.webp",
+      "title": "EXHIBITIONS",
+      "price": 90000,
+      "detail": "An exhibition is a public display of art, products, or information. In the context of your website, it may refer to events where businesses or individuals showcase their products, services, or innovations to a larger audience."
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/ssLHn8z/PRODUCT-LAUNCH-3.jpg",
+      "detailImg":"https://i.ibb.co/1X3Rm9Q/PRODUCT-LAUNCH-4.jpg",
+      "title": "PRODUCT LAUNCH",
+      "price": 150000,
+      "detail": " A product launch event is designed to introduce a new product to the market. It usually involves presentations, demonstrations, and marketing strategies to generate interest and excitement around the new offering."
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/vxmtLHH/Cultural-Parade-1.jpg",
+      "detailImg":"",
+      "title": "Cultural Parade",
+      "price": 30000,
+      "detail": "  A culture parade is a lively and colorful procession that celebrates the cultural diversity of a community or region. Participants often wear traditional clothing, display art, and perform cultural dances to showcase their heritage."
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/SngZ3zF/music-concert-1.jpg",
+      "detailImg":"https://i.ibb.co/3ynDrvJ/CONCERT-1.webp",
+      "title": "CONCERT",
+      "price": 25000,
+      "detail": "  A concert is a live musical performance where musicians and artists entertain an audience by playing music, singing, or performing other forms of artistic expression. Concerts can range from small intimate gatherings to large stadium events."
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/vQrHQzQ/FASHION-SHOW-3.webp",
+      "detailImg":"https://i.ibb.co/23Xtysm/FASHION-SHOW-5.jpg",
+      "title": "FASHION SHOW",
+      "price": 15000,
+      "detail": "A fashion show is an event where designers and brands present their latest clothing and accessory collections to an audience. Models walk down a runway, showcasing the latest fashion trends and designs. "
+    }
+]

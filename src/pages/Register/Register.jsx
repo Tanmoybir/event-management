@@ -16,50 +16,55 @@ const img = form.get('img');
 const password = form.get('password');
 
 // validation
-if (password < 6){
+if (password.length < 6){
     toast.error('Password must be at least 6 charecters');
     return
 }
 // creating a new user
     createUser(email,password)
-    .then(res =>console.log(res.user))
-    .catch(err => console.log(err))
+    .then(res =>{
+        console.log(res.user)
+        toast.success('User Created Successfully')
+    })
+    .catch(err => {
+        console.log(err)
+        toast.error(err.message)
+    })
 }
 
     return (
         <div>
-            <h1>Please Register Here</h1>
+          
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Register now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div className="text-center bg-black mx-2 py-6 rounded-lg">
+                            <h1 className="text-white text-3xl font-bold">Register</h1>
+                        </div>
                         <form onSubmit={handleSubmit} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Full Name</span>
                                 </label>
-                                <input type="text" placeholder="Full name" className="input input-bordered" name='name' />
+                                <input type="text" placeholder="Full name" className="input input-bordered bg-slate-200" name='name' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered" name='email' />
+                                <input type="text" placeholder="email" className="input input-bordered bg-slate-200" name='email' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Image Url</span>
                                 </label>
-                                <input type="text" placeholder="image url" className="input input-bordered" name='img' />
+                                <input type="text" placeholder="image url" className="input input-bordered bg-slate-200" name='img' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" name='password' />
+                                <input type="text" placeholder="password" className="input input-bordered bg-slate-200" name='password' />
                             </div>
                             <div className="form-control mt-6 p-0">
                                 <button className="btn btn-neutral" type='submit'>Register</button>
