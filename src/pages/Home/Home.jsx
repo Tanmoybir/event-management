@@ -9,9 +9,11 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <div className="max-w-screen-xl mx-auto px-5">
             <WelCome></WelCome>
            <Services></Services>
-           <Cards></Cards>
+            </div>
+            <Cards></Cards>
         </div>
     );
 };

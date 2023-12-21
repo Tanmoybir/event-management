@@ -53,6 +53,7 @@ const myCreateRoute = createBrowserRouter([
                 element:<PrivateRoute><Gallery></Gallery></PrivateRoute>,
                 loader:() => fetch("gallery.json")
             }
+            
         ]
     }
 ])

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../Social/SocialLogin";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -7,6 +7,9 @@ import toast from "react-hot-toast";
 
 const Login = () => {
 const {signIn} =useContext(AuthContext)
+const navigate = useNavigate()
+
+
 const handleLogin = (e) => {
     e.preventDefault()
     const form = new FormData(e.currentTarget);
@@ -15,13 +18,20 @@ const handleLogin = (e) => {
     
     // validation
     if (password < 6){
-        toast.error('Password must be at least 6 charecters');
+        toast.error('Password must be at least 6 characters');
         return
     }
     // creating a new user
         signIn(email,password)
-        .then(res =>console.log(res.user))
-        .catch(err => console.log(err))
+        .then(res =>{
+            console.log(res.user)
+            toast.success('User logged in Successfully')
+            navigate('/')
+        })
+        .catch(err =>{
+            console.log(err)
+            toast.error(err.message)
+        })
     }
 
     return (

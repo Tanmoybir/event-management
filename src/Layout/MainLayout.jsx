@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Navbar from "../Components/Header/Navbar";
+// import Footer from "../pages/Footer/Footer";
 
 
 
@@ -8,10 +9,11 @@ import Navbar from "../Components/Header/Navbar";
 const MainLayout = () => {
     return (
         <div>
-            <div className="max-w-screen-xl mx-auto">
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Toaster></Toaster>
+            <div className="">
+                <Navbar></Navbar>
+                <Outlet></Outlet>
+                <Toaster></Toaster>
+                {/* <Footer></Footer> */}
             </div>
         </div>
     );
