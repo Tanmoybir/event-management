@@ -1,12 +1,16 @@
 import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../Social/SocialLogin";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 
 const Register = () => {
     const { createUser, profileUpdate } = useContext(AuthContext)
+    const [showPassword, setShowPassword] = useState(false)
+
+
     const navigate = useNavigate()
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -70,7 +74,19 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered bg-slate-200" name='password' />
+                                <div className="relative">
+                                    <span className="absolute top-3 right-3" onClick={() => setShowPassword(!showPassword)}>
+                                        {
+                                            showPassword ? <FaRegEyeSlash /> : <FaRegEye />
+                                        }
+
+                                    </span>
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        placeholder="password"
+                                        className="input input-bordered bg-slate-200"
+                                        name='password' />
+                                </div>
                             </div>
                             <div className="form-control mt-6 p-0">
                                 <button className="btn btn-neutral" type='submit'>Register</button>

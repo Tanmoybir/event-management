@@ -4,7 +4,21 @@ import {HiOutlineMailOpen } from 'react-icons/hi';
 
 const ContactUs = () => {
     return (
-        <div className="px-3 my-10">
+        <div className="px-3 my-10 max-w-screen-xl mx-auto">
+            {/*  */}
+            <div className="bg-img5 hero min-h-[50vh] w-full bg-cover relative">
+                <div className="hero-content text-center">
+                    <div data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500" 
+                        className="max-w-md">
+                        <div className="w-36 md:w-52 lg:w-40 h-24 border-r-8 border-red-400 mt-4"></div>
+                        <h1 className="mb-5 text-5xl text-white font-bold">Contact Us</h1>
+                    </div>
+                </div>
+
+            </div>
+            {/*  */}
             <h2 className="text-center text-xl font-medium">Contact us if you need our services. We will be happy to make your events memorable!</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
             <div className="bg-emerald-400 py-16 rounded-tl-2xl rounded-br-2xl">

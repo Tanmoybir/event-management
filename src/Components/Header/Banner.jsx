@@ -4,7 +4,7 @@
 const Banner = () => {
     return (
         <div className="px-5">
-            <div className="bg-img4 hero min-h-screen w-full bg-cover relative">
+            <div className="bg-img4 hero min-h-screen lg:w-full bg-cover relative">
                 <div className="hero-content text-center">
                     <div data-aos="fade-left"
                         data-aos-easing="linear"

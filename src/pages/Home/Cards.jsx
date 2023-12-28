@@ -2,7 +2,7 @@
 
 const Cards = () => {
     return (
-        <div className="px-5 mt-8">
+        <div className="container px-5 mt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div data-aos="zoom-in-up"
                     data-aos-duration="1500"

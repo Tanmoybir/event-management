@@ -1,56 +1,56 @@
 [
     {
       "id": 1,
-      "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-      "title": "",
+      "image": "https://i.ibb.co/G3pWMLB/CONFERENES-3.jpg",
+      "title": "Conferences",
       "date": "24-1-2022"
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/PW34qsF/EXHIBITIONS-4.jpg",
+        "title": "Exibition",
         "date": "28-10-2022"
       },
       {
         "id": 3,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/F64KtTW/CONFERENES-4.jpg",
+        "title": "Conferences",
         "date": "10-12-2022"
       },
       {
         "id": 4,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/BwjNYnX/PRODUCT-LAUNCH-5.jpg",
+        "title": "Product launch",
         "date": "22-04-2023"
       },
       {
         "id": 5,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/njJdGkL/caltural-1.jpg",
+        "title": "Caltural Parade",
         "date": "04-06-2023"
       },
       {
         "id": 6,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/N79FZRv/EXHIBITIONS-5.jpg",
+        "title": "Exibition",
         "date": "04-06-2023"
       },
       {
         "id": 7,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/2WV7x2J/FASHION-SHOW-7.jpg",
+        "title": "Fashion-Show",
         "date": "04-06-2023"
       },
       {
         "id": 8,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/wYnGw70/CONCERT-2.jpg",
+        "title": "Concert",
         "date": "04-06-2023"
       },
       {
         "id": 9,
-        "image": "https://i.ibb.co/dp2v2rD/CONFERENES-1.webp",
-        "title": "",
+        "image": "https://i.ibb.co/HYRn3WL/PRODUCT-LAUNCH-6.jpg",
+        "title": "Product Launch",
         "date": "22-04-2023"
       }
 ]

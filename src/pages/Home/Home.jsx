@@ -5,13 +5,13 @@ import WelCome from "./WelCome";
 
 
 const Home = () => {
-    
+
     return (
-        <div>
+        <div className="">
             <Banner></Banner>
             <div className="max-w-screen-xl mx-auto px-5">
-            <WelCome></WelCome>
-           <Services></Services>
+                <WelCome></WelCome>
+                <Services></Services>
             </div>
             <Cards></Cards>
         </div>

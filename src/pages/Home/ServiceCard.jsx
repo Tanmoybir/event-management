@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ service }) => {
   const { id, title, image, price } = service
   return (
-    <div>
+    <div className="">
       <div data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"

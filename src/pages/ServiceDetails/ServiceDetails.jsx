@@ -17,8 +17,8 @@ const ServiceDetails = () => {
     },[id,serviceDetails])
     // console.log(details);
     return (
-        <div>
-             <h2>Service Details</h2>
+        <div className="max-w-screen-xl mx-auto mt-6 border">
+             
              <DetailCard details={details}></DetailCard>
         </div>
     );

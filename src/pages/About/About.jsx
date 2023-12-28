@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div className="px-3">
+        <div className="px-3 max-w-screen-xl mx-auto">
             <div className="text-center my-8 px-5">
                 <h2 className="text-slate-400 font-bold text-3xl">We <span className="text-red-400">Create Events</span> That Lasts</h2>
                 <p className="text-slate-400 text-lg font-medium mt-3">From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions, We offer full range of Events Management Services that scale to your needs & budget.</p>

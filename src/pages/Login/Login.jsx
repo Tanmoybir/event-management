@@ -1,37 +1,41 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../Social/SocialLogin";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { useState } from "react";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 
 const Login = () => {
-const {signIn} =useContext(AuthContext)
-const navigate = useNavigate()
+    const { signIn } = useContext(AuthContext)
+    const [showPassword, setShowPassword] = useState(false)
+    const location = useLocation()
+    const navigate = useNavigate()
 
 
-const handleLogin = (e) => {
-    e.preventDefault()
-    const form = new FormData(e.currentTarget);
-    const email = form.get('email');
-    const password = form.get('password');
-    
-    // validation
-    if (password < 6){
-        toast.error('Password must be at least 6 characters');
-        return
-    }
-    // creating a new user
-        signIn(email,password)
-        .then(res =>{
-            console.log(res.user)
-            toast.success('User logged in Successfully')
-            navigate('/')
-        })
-        .catch(err =>{
-            console.log(err)
-            toast.error(err.message)
-        })
+    const handleLogin = (e) => {
+        e.preventDefault()
+        const form = new FormData(e.currentTarget);
+        const email = form.get('email');
+        const password = form.get('password');
+
+        // validation
+        if (password < 6) {
+            toast.error('Password must be at least 6 characters');
+            return
+        }
+        // creating a new user
+        signIn(email, password)
+            .then(res => {
+                console.log(res.user)
+                toast.success('User logged in Successfully')
+                navigate(location?.state? location.state : '/')
+            })
+            .catch(err => {
+                console.log(err)
+                toast.error(err.message)
+            })
     }
 
     return (
@@ -53,7 +57,19 @@ const handleLogin = (e) => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered bg-slate-200" name='password' />
+                                <div className="relative">
+                                    <span className="absolute top-3 right-3" onClick={() => setShowPassword(!showPassword)}>
+                                        {
+                                            showPassword ? <FaRegEyeSlash /> : <FaRegEye />
+                                        }
+
+                                    </span>
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        placeholder="password"
+                                        className="input input-bordered bg-slate-200"
+                                        name='password' />
+                                </div>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>

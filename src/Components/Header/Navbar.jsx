@@ -7,7 +7,9 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
     const [open,setOpen] = useState(false)
 
+
     return (
+        
         <div className="w-full z-10 shadow-lg">
 
             <div className="max-w-screen-xl mx-auto px-5">
@@ -18,7 +20,7 @@ const Navbar = () => {
                         </div>
                         <img className="w-28 md:w-40" src="https://i.ibb.co/kVC7mPm/logo-events.png" alt="" />
                     </div>
-                    <ul className={`lg:flex absolute lg:static  items-center gap-5 ${open ? "top-8 -left-10 px-5 bg-yellow-100 z-10" :"-top-40"}`}>
+                    <ul className={`lg:flex absolute lg:static  items-center gap-5 ${open ? "top-8 left-0 px-5 bg-yellow-100 z-10" :"-top-44"}`}>
                         <li className="text-xl font-semibold px-3 my-3">
                             <NavLink
                                 to="/"

@@ -9,11 +9,12 @@ const GalleryCard = ({ item }) => {
                     <img
                         src={image}
                         alt="ui/ux review check"
+                        className="w-full h-48"
                     />
                 </div>
                 <div className="p-6">
                     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        UI/UX Review Check
+                        {title}
                     </h4>
                     <p className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased">
                         {date}

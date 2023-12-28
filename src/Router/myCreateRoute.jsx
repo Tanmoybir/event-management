@@ -21,7 +21,7 @@ const myCreateRoute = createBrowserRouter([
             {
                 path:"/",
                 element:<Home></Home>,
-                loader:() => fetch('service.json')
+                loader:() => fetch('/service.json')
             },
             {
                 path:"/about",
@@ -42,7 +42,7 @@ const myCreateRoute = createBrowserRouter([
             {
                 path:"/services/:id",
                 element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-                loader:() => fetch('service.json')
+                loader:() => fetch('/service.json')
             },
             {
                 path:"/contact",
@@ -51,7 +51,7 @@ const myCreateRoute = createBrowserRouter([
             {
                 path:"/gallery",
                 element:<PrivateRoute><Gallery></Gallery></PrivateRoute>,
-                loader:() => fetch("gallery.json")
+                loader:() => fetch("/gallery.json")
             }
             
         ]
